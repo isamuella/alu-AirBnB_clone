@@ -13,7 +13,7 @@ Create a parent class *BaseModel* to handle initialization, serialization, and d
 Set up a flow for converting between objects and persistent storage:
 Instance ↔ Dictionary ↔ JSON string ↔ File
 
-Build subclasses such as *User, *State*, *City*, *Place*, and others, all inheriting from *BaseModel*
+Build subclasses such as `User`, `State`, `City`, `Place`, and others, all inheriting from *BaseModel*
 
 Develop a file-based storage engine to store and retrieve serialized data
 
@@ -22,7 +22,7 @@ Write unit tests for each class and component to ensure reliability and correctn
 
 The command interpreter will be able to:
 
-Create new instances of objects (e.g., *User*, *Place*)
+Create new instances of objects (e.g., `User`, `Place`)
 
 Retrieve stored objects
 
