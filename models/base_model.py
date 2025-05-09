@@ -10,12 +10,12 @@ class BaseModel:
         """Initializes new instances of BaseModel"""
         if kwargs:
             for key, value in kwargs.items():
-            if key == "__class__":
-                continue
-            elif key in ("created_at","updated_at"):
-                setattr(self, key, datetime.fromisoformat(value))
-            else:
-                setattr(self, key, value)
+                if key == "__class__":
+                    continue
+                elif key in ("created_at","updated_at"):
+                    setattr(self, key, datetime.fromisoformat(value))
+                else:
+                    setattr(self, key, value)
 
         else:
             self.id = str(uuid.uuid4())
