@@ -9,7 +9,7 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """Initializes new instances of BaseModel"""
         if kwargs:
-            for key, value in kwargs.items()
+            for key, value in kwargs.items():
             if key == "__class__":
                 continue
             elif key in ("created_at","updated_at"):
