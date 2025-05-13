@@ -7,7 +7,7 @@ import cmd
 
 class HBNBCommand(cmd.Cmd):
     """Class that implements a command-line interface for the AirBnB clone application"""
-    prompt = "(hbnb)"
+    prompt = '(hbnb)'
 
     def do_quit(self, arg):
         """command to exit the program"""
@@ -18,7 +18,7 @@ class HBNBCommand(cmd.Cmd):
         print()
         return True
 
-    def empty_line(self):
+    def emptyline(self):
         """an empty line"""
         pass
 
