@@ -10,7 +10,7 @@ from fabric.api import local
 
 def do_pack():
     """
-    making an archive on web_static folder
+    Making an archive on web_static folder
     """
 
     time = datetime.now().strftime("%Y%m%d%H%M%S")
